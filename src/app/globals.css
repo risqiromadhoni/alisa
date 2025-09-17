@@ -1,3 +1,6 @@
+/* @see https://ant.design/docs/react/compatible-style#tailwindcss-v4 */
+@layer theme, base, antd, components, utilities;
+
 @import "tailwindcss";
 
 :root {
