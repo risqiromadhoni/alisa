@@ -8,6 +8,9 @@ if [ -z "$(git diff --cached --name-only)" ]; then
   exit 0
 fi
 
+# Run tsc
+pnpm run typecheck
+
 # Store the hash of staged changes to detect modifications
 STAGED_HASH=$(git diff --cached | sha256sum | cut -d' ' -f1)
 
