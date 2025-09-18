@@ -11,12 +11,14 @@
     "prepare": "husky",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "clean": "git clean -xdf .cache .next dist node_modules",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {
+    "@ant-design/icons": "^6.0.2",
     "@ant-design/nextjs-registry": "^1.1.0",
     "antd": "^5.27.4",
+    "antd-style": "^3.7.1",
     "next": "15.5.3",
     "react": "19.1.0",
     "react-dom": "19.1.0"
@@ -28,19 +30,19 @@
     "@storybook/addon-docs": "^9.1.6",
     "@storybook/addon-onboarding": "^9.1.6",
     "@storybook/addon-vitest": "^9.1.6",
+    "@storybook/nextjs-vite": "^9.1.6",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vitest/browser": "^3.2.4",
+    "@vitest/coverage-istanbul": "^3.2.4",
     "husky": "^9.1.7",
+    "playwright": "^1.55.0",
     "storybook": "^9.1.6",
     "tailwindcss": "^4",
     "typescript": "^5",
     "ultracite": "5.3.4",
-    "@storybook/nextjs-vite": "^9.1.6",
-    "vitest": "^3.2.4",
-    "@vitest/browser": "^3.2.4",
-    "playwright": "^1.55.0",
-    "@vitest/coverage-istanbul": "^3.2.4"
+    "vitest": "^3.2.4"
   }
 }
